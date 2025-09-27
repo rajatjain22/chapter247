@@ -7,7 +7,7 @@ import { AppDispatch, RootState } from "@/store";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
-const AUTO_LOGOUT_TIME = 10 * 1000;
+const AUTO_LOGOUT_TIME = 10 * 60 * 1000;
 const COUNTDOWN_TIME = 60;
 
 export default function AutoLogoutWrapper({ children }: { children: React.ReactNode }) {
